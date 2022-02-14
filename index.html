@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just For You</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+
+    <img src="media/h1.png" class="logo-img">
+    <a href="#" class="logo">Just For You<span>.</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></a>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#others">Others</a>
+    </nav>
+
+  </header>
+
+  <section class="home" id="home">
+  </section>
+
+  <!-- intro section -->
+  <section class="intro" id="intro">
+    <div class="max-width">
+      <div class="intro-content">
+        <div class="column left">
+          <img src="media/taguig.jpg" alt="">
+        </div>
+        <div class="column right">
+          <h2 class="title1">Aniyo, H!</h2>
+          <h2 class="semi-title">Pogi yarn? Haha</h2>
+          <br><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rem libero eligendi sequi saepe, voluptas quos architecto fuga, in atque reiciendis ipsa, ex impedit deserunt. Voluptates voluptatum quo soluta dolor neque alias obcaecati blanditiis molestias ducimus ex debitis id quasi laborum, praesentium dignissimos quisquam cupiditate, cumque veritatis et. Nisi soluta animi nulla, vero necessitatibus sed laborum at mollitia laudantium dignissimos!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+
+    <h1 class="heading"> <span> Select a song:</span> <div class="line"></div> </h1>
+
+    <div class="content1">
+      <div class="content2">
+      <div class="move">
+
+      <div class="right-col">
+        <p>You Right - Doja Cat, The Weeknd</p>
+        <img src="media/play.png" id="icon">
+      </div>
+        <!--<div class="color-box">
+          <h3>Select a song as your background music.</h3>
+          <p>(Bakkuguraundomyūjikku to shite kyoku o sentaku shimasu. Wow japanese HAHAHAHA)</p>
+          <img src="file:///C:/Users/genina/Desktop/SCRATCH/media/cat.png" class="cat2">
+        </div>-->
+      <div class="right-col2">
+        <p>Plastic Love - 竹内 まりや</p>
+        <img src="media/play.png" id="icon2">
+      </div>
+      <div class="right-col3">
+        <p>Sa Susunod Na Lang - Skusta Clee</p>
+        <img src="media/play.png" id="icon3">
+      </div>
+      <div class="right-col4">
+        <p>Moonlight - Dhruv</p>
+        <img src="media/play.png" id="icon4">
+      </div>
+      <div class="right-col5">
+        <p>Superficial Love - Ruth B.</p>
+        <img src="media/play.png" id="icon5">
+      </div>
+
+      </div>
+      </div>
+    </div>
+
+    
+  <audio id="mySong">
+    <source src="media/youright.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="mySong2">
+    <source src="media/plasticlove.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="mySong3">
+    <source src="media/sasusunodnalang.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="mySong4">
+    <source src="media/moonlight.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="mySong5">
+    <source src="media/superficiallove.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    var mySong2 = document.getElementById("mySong2");
+    var icon2 = document.getElementById("icon2");
+
+    var mySong3 = document.getElementById("mySong3");
+    var icon3 = document.getElementById("icon3");
+
+    var mySong4 = document.getElementById("mySong4");
+    var icon4 = document.getElementById("icon4");
+
+    var mySong5 = document.getElementById("mySong5");
+    var icon5 = document.getElementById("icon5");
+
+    icon.onclick = function(){
+      if(mySong.paused){
+        mySong.play();
+        icon.src = "media/pause.png";
+      }else{
+        mySong.pause();
+        icon.src = "media/play.png";
+      }
+    }
+    icon2.onclick = function(){
+      if(mySong2.paused){
+        mySong2.play();
+        icon2.src = "media/pause.png";
+      }else{
+        mySong2.pause();
+        icon2.src = "media/play.png";
+      }
+    }
+    icon3.onclick = function(){
+      if(mySong3.paused){
+        mySong3.play();
+        icon3.src = "media/pause.png";
+      }else{
+        mySong3.pause();
+        icon3.src = "media/play.png";
+      }
+    }
+    icon4.onclick = function(){
+      if(mySong4.paused){
+        mySong4.play();
+        icon4.src = "media/pause.png";
+      }else{
+        mySong4.pause();
+        icon4.src = "media/play.png";
+      }
+    }
+
+    icon5.onclick = function(){
+      if(mySong5.paused){
+        mySong5.play();
+        icon5.src = "media/pause.png";
+      }else{
+        mySong5.pause();
+        icon5.src = "media/play.png";
+      }
+    }
+  </script>
+
+<div class="row">
+
+  <div class="video-container">
+      <!--<video src="images/about-vid.mp4" loop autoplay muted></video>
+      <image src="file:///C:/Users/genina/Desktop/DEMO/media/nemo1.jpg"></image>
+      <h3>best flower sellers</h3>-->
+  </div>
+
+  <div class="content">
+      <h3>Select a song as your background music.</h3>
+          <p>(Bakkuguraundomyūjikku to shite kyoku o sentaku shimasu. Wow japanese HAHAHAHA)</p>
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+      <a href="#" class="btn">learn more</a>-->
+  </div>
+
+</div>
+
+  </section>
+
+  <section class="events">
+    <div class="title">
+      <h1>My Pictures</h1>
+      <div class="line"></div>
+      <p>(Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo)</p>
+    </div>
+    <div class="row2">
+      <div class="col">
+        <img src="media/taguig.jpg" alt="">
+        <h4>Cattt Catt Cat</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo</p>
+      </div>
+      <div class="col">
+        <img src="media/luneta.jpg" alt="">
+        <h4>Walking Holidays</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo</p>
+      </div>
+      <div class="col">
+        <img src="media/luneta.jpg" alt="">
+        <h4>Walking Holidays</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore">
+    <div class="explore-content">
+    <h1>EPLORE THE WORLD</h1>
+    <div class="line"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facilis ipsa autem Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+  </section>
+
+  <section class="tours">
+    <div class="row2">
+      <div class="col content-col">
+      <h1>UPCOMING TOURS & DESTINATION</h1>
+      <div class="line"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, a vitae! Non laudantium, sequi debitis sit sed est. Ut harum asperiores vero quis voluptatem et esse qui. Fuga, error reiciendis.</p>
+      </div>
+      <div class="col image-col">
+        <div class="image-gallery">
+          <img src="media/taguig.jpg" alt="">
+          <img src="media/taguig.jpg" alt="">
+          <img src="media/taguig.jpg" alt="">
+          <img src="media/taguig.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consectetur assumenda velit cumque</p>
+    <p>Copyrighy @ 2020 Outdoor Adventure</p>
+  </section>
+
+</body>
+</html>
